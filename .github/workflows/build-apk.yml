@@ -26,9 +26,9 @@ jobs:
 
       - name: Extraer proyecto AURIX
         run: |
-          unzip -q AURIX_MOBILE_PRO_ANDROID_V8_GITHUB.zip -d aurix_build
-          cd aurix_build/AURIX_ANDROID_APP_V8/AURIX_ANDROID_APP
-          echo "PROJECT_DIR=$PWD" >> "$GITHUB_ENV"
+                        unzip -q AURIX_MOBILE_PRO_ANDROID_V2_FIX2.zip -d aurix_build
+              PROJECT_DIR="$(dirname "$(find aurix_build -type f \( -name settings.gradle -o -name settings.gradle.kts \) -print -quit)")"
+              echo "PROJECT_DIR=$GITHUB_WORKSPACE/$PROJECT_DIR" >> "$GITHUB_ENV"
 
       - name: Compilar APK
         working-directory: ${{ env.PROJECT_DIR }}
