@@ -1,0 +1,12 @@
+AURIX MOBILE PRO V8 - COMO OBTENER EL APK SIN COMPUTADOR
+
+1. Crea o inicia sesion en GitHub desde Chrome del celular.
+2. Crea un repositorio nuevo, por ejemplo: aurix-mobile-pro.
+3. Sube TODO el contenido de la carpeta AURIX_ANDROID_APP (incluyendo .github/workflows/build-apk.yml).
+4. En GitHub abre Actions -> Construir APK AURIX -> Run workflow.
+5. Espera a que termine el trabajo.
+6. En la ejecucion terminada busca Artifacts y descarga AURIX-MOBILE-PRO-APK.
+7. Descomprime el archivo descargado si Android lo pide y abre app-debug.apk.
+8. Autoriza la instalacion desde esa fuente cuando Android lo solicite.
+
+NOTA: esta compilacion es una APK de depuracion. No ejecuta operaciones automaticamente en MT5. La clave de Twelve Data se introduce dentro de AURIX y queda guardada localmente en el dispositivo.
